@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Dancing Script', 'Kaushan Script', 'Playfair Diplay';
+    color: rgb(73, 66, 66);
+    background-image: linear-gradient(rgb(101, 96, 133) 15%,
+            rgb(128, 81, 117) 40%, rgba(88, 70, 158, 0.87), rgb(190, 145, 233));
+}
+
+ul.ligar {
+    list-style-type: none;
+    align-items: center;
+
+}
+
+h1:hover {
+    font-size: 120px;
+    color: #fce085;
+    opacity: 20%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+body a {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: dancing script;
+    font-size: 20px;
+    padding: -8px;
+    margin-top: -25px;
+    margin-left: 50px;
+}
+
+nav a {
+    display: inline;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #c8ec7a;
+    opacity: 50%;
+    transition-duration: 2ms;
+   }
+
+nav ul {
+    margin-top: 40px;
+    margin-right:-20px;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    transform: scale(2.07);
+}
+
+footer a:hover {
+    color: #a0e015;
+    font-size: 2em;
+}
+footer a{
+    margin-left: -30px;
+    margin-right: 60px;
+    padding-left:-150px;
+    padding-right: 320px;
+    }
+
+.barralateral {
+    flex-wrap: wrap;
+    margin-left: -320%;
+    transform: scale(2.01);
+    position: absolute;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+
+.logo img {
+    width: 165px;
+    height: 175px;
+    display: flex;
+    margin-left: 42%;
+    position: absolute;
+    margin-top: -25px;
+
+}
+
+.logo a:hover {
+    color: #e630dd;
+    opacity: 50%;
+}
+img:hover {
+    width: 180px;
+    height:185px;
+  }
+
+h1 {
+    padding: -130px;
+    display: flex;
+    position: absolute;
+    font-size: max(60px, 5vw);
+    color: #a3f176;
+    font-family: dancing script;
+    text-align: center;
+    margin-top: 130px;
+    margin-left: 15%;
+
+}
+
+.card {
+
+    margin-top: 18px;
+    position: absolute;
+    background-image: url(./imagens20aula/faixacaribe.jpg);
+    width: 120%;
+    height: 150px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.card span:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, transparent, rgb(186, 218, 248));
+    animation: animar1 4s linear infinite;
+}
+
+@keyframes animar1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.card span:nth-of-type(3) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to left, transparent, rgb(186, 218, 248));
+    animation: animar3 4s linear infinite;
+}
+
+@keyframes animar3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.tracking-in-expand-fwd {
+    -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+        transform: translateZ(-700px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+        transform: translateZ(-700px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+.tracking-in-contract-bck {
+    -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px);
+        transform: translateZ(400px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px);
+        transform: translateZ(400px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+.content {
+    height: 927px;
+    width: 620px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: 18% auto 0 20px;
+
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 25px;
+    height: 17px;
+    border: 2px solid rgb(172, 165, 165);
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover {
+    background: white;
+    opacity: 50%;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked~.s1 {
+    margin-left: 0;
+}
+
+#slide2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked~.s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked~.s1 {
+    margin-left: -80%;
+}
+
+footer {
+    position: relative;
+    padding-top: 400px;
+    padding-left: -430px;
+}

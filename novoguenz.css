@@ -1,0 +1,258 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: dancing script;
+ }
+ body {
+    background-image: url('imagens20aula/calendariofundoaquaazul.jpg');
+     min-height: 100vh;
+ }
+ .interface {
+     max-width: 1280px;
+     margin: 0 auto;
+ }
+ 
+ header img{
+     width: 180px;
+     height: 190px;
+     margin-top: -30%;
+                
+ }
+ section.flex {
+ display:flex;
+ }
+ header {
+   padding: -188px 20px;
+   
+   }
+ header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 160px;
+    
+ }
+
+ header a {
+     color: rgb(215, 201, 230);
+     position: absolute;
+     margin-top: 118px;
+     text-decoration: none;
+     font-size: 32px;
+     display: flex;
+     transition: .2s;
+ }
+ header a:hover {
+     color: #f3dbdb;
+     transform: scale(2.07);
+ }
+     
+ header nav ul {
+     list-style-type: none;
+ }
+  nav ul li{
+     display:inline-block;
+      padding-right: 340px;
+      padding-inline: 228px;
+      padding-inline-start: 180px;
+      margin-inline-start: -50px;
+      align-items: flex-end;
+            
+ }
+ a {
+    margin-top: -23px;
+    margin-left: -240px;
+    gap: 80px;
+    
+ }
+ .contato  button {
+     padding: 10px 40px;
+     font-size: 24px;
+     border-radius: 17px;
+     font-weight: 900;
+     color: brown;
+     background-color: #e1fcf1;
+     border: 0;
+     cursor: pointer;
+     margin-left: 30%;
+     }
+     .contato button:hover{
+        box-shadow: 0px 0px 8px rgb(245, 30, 102);
+        transform: scale(1.05);
+
+     }
+     .card {
+         margin-top: -68px;
+         position: absolute;
+         background-image: url(imagens20aula/3rostospastelrage.jpg);
+         width: 100%;
+         height: 249px;
+         overflow: hidden;
+         z-index: -1;
+             }
+         .card span:first-of-type {
+         position: absolute;
+         top: 0;
+         left:0;
+         width: 100%;
+         height: 4px;
+         background: linear-gradient(to right, transparent, rgb(186, 218, 248));
+         animation: animar1 4s linear infinite;
+     }
+     @keyframes animar1 {
+         0% {
+             transform: translateX(-100%);
+         }
+         100% {
+             transform: translateX(100%);
+         }
+       }
+     .card span:nth-of-type(3){
+         position: absolute;
+         bottom: 0;
+         right:0;
+         width: 100%;
+         height: 8px;
+         background: linear-gradient(to left, transparent, rgb(186, 218, 248));
+         animation: animar3 4s linear infinite;
+     }
+     @keyframes animar3 {
+       0% {
+           transform: translateX(100%);
+       }
+       100% {
+           transform: translateX(-100%);
+       }
+     }
+     .tracking-in-expand-fwd {
+         -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                 animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+     }
+     
+      @-webkit-keyframes tracking-in-expand-fwd {
+       0% {
+         letter-spacing: -0.5em;
+         -webkit-transform: translateZ(-700px);
+                 transform: translateZ(-700px);
+         opacity: 0;
+       }
+     
+       40% {
+         opacity: 0.6;
+       }
+       100% {
+         -webkit-transform: translateZ(0);
+                 transform: translateZ(0);
+         opacity: 1;
+       }
+      }
+     @keyframes tracking-in-expand-fwd {
+       0% {
+         letter-spacing: -0.5em;
+         -webkit-transform: translateZ(-700px);
+                 transform: translateZ(-700px);
+         opacity: 0;
+       }
+       40% {
+         opacity: 0.6;
+       }
+       100% {
+         -webkit-transform: translateZ(0);
+                 transform: translateZ(0);
+         opacity: 1;
+       }
+     }
+     .tracking-in-contract-bck {
+         -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                 animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+     }
+     
+      @-webkit-keyframes tracking-in-contract-bck{
+       0% {
+         letter-spacing: 1em;
+         -webkit-transform: translateZ(400px);
+                 transform: translateZ(400px);
+         opacity: 0;
+       }
+       40% {
+         opacity: 0.6;
+       }
+       100% {
+         -webkit-transform: translateZ(0);
+                 transform: translateZ(0);
+         opacity: 1;
+       }
+     }
+     
+     @keyframes tracking-in-contract-bck {
+       0% {
+         letter-spacing: 1em;
+         -webkit-transform: translateZ(400px);
+                 transform: translateZ(400px);
+         opacity: 0;
+       }
+       40% {
+         opacity: 0.6;
+       }
+       100% {
+         -webkit-transform: translateZ(0);
+                 transform: translateZ(0);
+         opacity: 1;
+       }
+     }
+     
+       
+ /*ESTILO DO TOPO DO SITE*/
+ .topo-do-site .txt-topo-site{
+     padding: 40px 4% 5% 2%;
+     display: flex;
+ }
+ .topo-do-site .flex {
+     align-items:center;
+     justify-content:center;
+ 
+ }
+ .topo-do-site h1{
+     color: #d6f77d;
+     font-size: 39px;
+     line-height: 20px 4%;
+     margin-left: 8%;
+     gap:80px;
+    }
+ h1{
+     font-family: roboto;
+ }
+ p{
+     display: flex;
+     margin-top:185px;
+     color: rgb(238, 231, 237);
+     font-size: 27px;
+     margin-left: 8%;
+     margin-right: 480px;
+     padding: 9px 5px 38px 18px;
+ }
+ .btn{
+   margin-left: 5%;
+ }
+ .img-topo-site{
+     position: absolute;
+     top: 23%;
+     left: 77%;
+ }
+ .topo-do-site .img-topo-site img{
+   position: relative;
+   animation:flutuar 2s ease-in-out 4 alternate;
+ 
+ }
+ @keyframes flutuar{
+   0%{
+     top: 0;
+   }
+   100%{
+     top: 30px;
+   }
+ }
+ 
+ 
+ 
