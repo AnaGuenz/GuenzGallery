@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+    color: aliceblue;
+    min-height: 100vh;
+    font-family:'Dancing Script', 'Kaushan Script', 'Playfair Diplay';
+    background-image: linear-gradient(rgb(101, 96, 133) 15%,
+ rgb(128, 81, 117) 40%, rgba(88, 70, 158, 0.87),rgb(190, 145, 233)
+ );
+}
+ul {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 30px 47px 30px;    
+}
+a {
+    display: flex;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: dancing script;
+    font-size: 20px;
+    padding-inline: 18px;
+   }
+nav a:hover{
+    color: #ace630;
+    font-size: 36px;
+}
+.logo img {
+    width: 155px;
+    height: 165px;
+    align-items: baseline;
+    display: flex;
+    margin-left: 42%;
+    position: absolute;
+    
+    }
+    .logo a:hover{
+      color: #e630dd;
+      opacity: 50%;
+    }
+      .logo img:hover{
+      width: 180px;
+      height:185px;
+      opacity: 80%;
+    }
+    h1 {
+        display: flex;
+        position: absolute;
+        font-size: max(60px,5vw);
+        color: rgb(201, 247, 93);
+        font-family: dancing script;
+        text-align: center;
+        margin-top: 130px;
+        margin-left: 40%;
+    }
+    h1:hover{
+        font-size: 100px;
+        color: #fadd7c;
+        opacity: 80%;
+        cursor: pointer;
+    }
+    .card {
+        margin-top: 18px;
+        position: absolute;
+        background-image: url(./imagens20aula/faixacaribe.jpg);
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        z-index: -1;
+            }
+        .card span:first-of-type {
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(to right, transparent, rgb(186, 218, 248));
+        animation: animar1 4s linear infinite;
+    }
+  
+    .sidenav {
+        max-width: 400px;
+        min-width: 390px;
+        height: 900px;
+        background-image: url(./imagens20aula/estreitobanner2.jpg);
+        border-radius: 20px;
+        margin-left: 60px;
+        margin-top: 230px;
+        margin-bottom: -10%;
+        font-size: 20px;
+        text-align: center;
+        padding: 44px 2px 15px 10px;    
+    }
+       .bem-vindo{
+        margin-top:80px;
+        color: #9216b8;
+       }
+    
+       span {
+        color: #91175e;
+        font-size: 45px;
+       }
+       .obrigada {
+        color: #fcfbec;
+        font-size: 28px;
+       }
+       
+       .escrituras p {
+        margin-top:10px;
+        color: rgb(146, 18, 129);
+        font-size: 27px;
+        margin-left: 4px;
+        padding: 81px 2px 4px 2px;    
+              }
+        
+    .content {
+        width: 700px;
+        border-radius:20px;
+        overflow: hidden;
+        position: relative;
+        margin: -870px 150px 120px 510px;
+       } 
+      
+    .navigation {
+        position: absolute;
+        bottom: 10px;
+        left:50%;
+        transform: translate(-50%);
+        display:flex;
+    }
+   
